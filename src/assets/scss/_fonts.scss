@@ -1,0 +1,34 @@
+//  Typography
+
+//  Body Copy
+//  Fonts
+$Font-Size: 15px;
+$Font-Alata: 'Alata', sans-serif;
+$Font-Josefin-Sans: 'Josefin Sans', sans-serif;
+
+$Weight-300: 300;
+$Weight-400: 400;
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('~@/assets/fonts/josefinsans-italic-variablefont_wght-webfont.woff2') format('woff2'),
+       url('~@/assets/fonts/josefinsans-italic-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('~@/assets/fonts/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
+       url('~@/assets/fonts/josefinsans-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alata';
+  src: url('~@/assets/fonts/alata-regular.woff2') format('woff2'),
+       url('~@/assets/fonts/alata-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

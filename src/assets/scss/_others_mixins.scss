@@ -1,0 +1,33 @@
+@mixin hide-content {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@mixin show-content {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+@mixin hover-link-element($color, $colorBefore, $bottom, $height) {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: $bottom;
+    width: 100%;
+    height: $height;
+    background-color: $colorBefore;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+  }
+
+  &:hover,
+  &:focus-within {
+    color: $color;
+
+    &::before {
+      transform: scaleX(100%);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import 'fonts';
+@import 'breakpoints';
+
+:root {
+  font-size: $Font-Size;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 3rem;
+  --h1-font-size: 2.8rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.325rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Margins Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-4: 4rem;
+  --mb-5: 5rem;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: $Breakpoint-tablet) {
+  :root {
+    --big-font-size: 5.5rem;
+    --h1-font-size: 5rem;
+    --h2-font-size: 2.7rem;
+    --h3-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+@media screen and (min-width: $Breakpoint-laptop) {
+  :root {
+    --big-font-size: 7rem;
+    --h1-font-size: 6rem;
+    --h2-font-size: 3.2rem;
+    --h3-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
